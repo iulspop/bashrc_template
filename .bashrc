@@ -14,22 +14,12 @@ ca () {
 
 ct () {
   if [[ $# == '0' ]]; then
-    command git add -A && git commit -m "Quick commit" -m "Co-authored-by: Stephen Gontzes <gontzess@gmail.com>
-Co-authored-by: Isaak Krautwurst <isaakkraut@gmail.com>
-Co-authored-by: Iuliu Pop <iuliu.laurentiu.pop@protonmail.com>
-Co-authored-by: Josh Keller <jrkeller@gmail.com>"
+    command git add -A && git commit -m "Quick commit" -m "Co-authored-by: Radu Constantin <raduadrian.constantin94@gmail.com>"
   elif [[ $# == '1' ]]; then
-    command git add -A && git commit -m "$1" -m "Co-authored-by: Stephen Gontzes <gontzess@gmail.com>
-Co-authored-by: Isaak Krautwurst <isaakkraut@gmail.com>
-Co-authored-by: Iuliu Pop <iuliu.laurentiu.pop@protonmail.com>
-Co-authored-by: Josh Keller <jrkeller@gmail.com>"
+    command git add -A && git commit -m "$1" -m "Radu Constantin <raduadrian.constantin94@gmail.com>"
   else
     command git add -A && git commit -m "$1" -m "$2
-
-Co-authored-by: Stephen Gontzes <gontzess@gmail.com>
-Co-authored-by: Isaak Krautwurst <isaakkraut@gmail.com>
-Co-authored-by: Iuliu Pop <iuliu.laurentiu.pop@protonmail.com>
-Co-authored-by: Josh Keller <jrkeller@gmail.com>"
+Radu Constantin <raduadrian.constantin94@gmail.com>"
   fi
 }
 
@@ -113,7 +103,4 @@ export NVM_DIR="$HOME/.nvm"
 
 . "$HOME/.cargo/env"
 
-# Setup personal dev account AWS environment credentials for Pixee
 source /home/joy/uber_dev/work/aws_env/aws_env.sh
-# aws_env personal
-
